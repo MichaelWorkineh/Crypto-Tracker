@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+h1{
   text-align: center;
+  font: 3em sans-serif;
+  font-weight: bold;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.most-promising {
+  margin: 20px auto;
+  padding: 15px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.most-promising h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.most-promising p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.most-promising strong {
+  color: #27ae60;
+}
+
+/* Warning Label Styling */
+.warning-label {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffcccb; /* Light red background for warning */
+  border: 1px solid #ff0000; /* Red border */
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.warning-label p {
+  margin: 0;
+  color: #a94442; /* Dark red for text */
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .most-promising {
+    padding: 10px;
+    font-size: 0.9rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .warning-label {
+    font-size: 0.85rem;
+    padding: 8px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .most-promising {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .warning-label {
+    font-size: 0.8rem;
+    padding: 6px;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+strong.warning{
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
